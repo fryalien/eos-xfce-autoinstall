@@ -11,7 +11,7 @@ echo "Which script do you want to run?"
 echo "1) iMac27"
 echo "2) minis"
 echo "3) vm"
-echo -n "Enter choice (1 or 2): "
+echo -n "Enter choice (1 or 2 or 3): "
 
 read CHOICE
 
