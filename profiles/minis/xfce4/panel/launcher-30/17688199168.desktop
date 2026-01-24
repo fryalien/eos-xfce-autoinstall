@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=FreeTube
+Comment=An Open Source YouTube app for privacy.
+GenericName=FreeTube
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/run.sh --file-forwarding io.freetubeapp.FreeTube @@u %u @@
+Icon=io.freetubeapp.FreeTube
+Type=Application
+StartupNotify=true
+StartupWMClass=FreeTube
+Categories=GNOME;GTK;AudioVideo;Network;Utility;
+MimeType=x-scheme-handler/freetube;
+X-Flatpak=io.freetubeapp.FreeTube
+X-XFCE-Source=file:///var/lib/flatpak/app/io.freetubeapp.FreeTube/x86_64/stable/e738c277acca46c63ac8429d58e7f72a5eff6f2107523a21b3c7ad012dc918d0/export/share/applications/io.freetubeapp.FreeTube.desktop

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Varia
+Comment=Download files, videos and torrents
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=varia --file-forwarding io.github.giantpinkrobots.varia @@u %u @@
+Icon=io.github.giantpinkrobots.varia
+Terminal=false
+Type=Application
+Categories=Network
+Keywords=varia;aria;download;manager;torrent;bittorrent;video;audio;media;ytdlp;YouTube;downloader
+StartupNotify=true
+X-Flatpak=io.github.giantpinkrobots.varia
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+DBusActivatable=true
+X-XFCE-Source=file:///var/lib/flatpak/app/io.github.giantpinkrobots.varia/x86_64/stable/f2feff88bbb0246be8a7f5293c609fce018dea101c7c4881c8fdfd8dd089ed60/export/share/applications/io.github.giantpinkrobots.varia.desktop

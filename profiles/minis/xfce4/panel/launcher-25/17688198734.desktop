@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Network;FileTransfer;P2P;Qt;
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent @@u %U @@
+GenericName=BitTorrent client
+Comment=Download and share files over BitTorrent
+Icon=org.qbittorrent.qBittorrent
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Name=qBittorrent
+Terminal=false
+Type=Application
+StartupNotify=false
+StartupWMClass=qbittorrent
+Keywords=bittorrent;torrent;magnet;download;p2p;
+SingleMainWindow=true
+X-Flatpak=org.qbittorrent.qBittorrent
+X-XFCE-Source=file:///var/lib/flatpak/app/org.qbittorrent.qBittorrent/x86_64/stable/778c0b124fc38fc6a414bedfcae83e10adb5c86bf2887d2398f865788228a531/export/share/applications/org.qbittorrent.qBittorrent.desktop

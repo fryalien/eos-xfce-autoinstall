@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1752322833548443-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>Open Thunar as Root Here</name>
+	<submenu></submenu>
+	<unique-id>1754064659324913-2</unique-id>
+	<command>thunar admin:///%f</command>
+	<description>Open thunar as root here</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to JPEG</name>
+	<submenu></submenu>
+	<unique-id>1754064877837685-3</unique-id>
+	<command>magick %f -quality 100 %f.jpg</command>
+	<description>Convert to JPEG</description>
+	<range>*</range>
+	<patterns>*.bmp;*.png;*.BMP;*.PNG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to PNG</name>
+	<submenu></submenu>
+	<unique-id>1754066327959519-4</unique-id>
+	<command>magick %f -quality 100 %f.png</command>
+	<description>Convert to PNG</description>
+	<range>*</range>
+	<patterns>*.jpg;*.JPG;*.jpeg;*.JPEG;*.bmp;*.BMP</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rotate Clockwise</name>
+	<submenu></submenu>
+	<unique-id>1754066428032794-5</unique-id>
+	<command>for file in %F; do exiftran -i9 &quot;$file&quot;; done</command>
+	<description>Rotate Clockwise</description>
+	<range>*</range>
+	<patterns>*.jpg;*.JPG;*.jpeg;*.JPEG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Edit as root</name>
+	<submenu></submenu>
+	<unique-id>1754066773994371-6</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-launch mousepad %f</command>
+	<description>Edit as root</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Smaller image</name>
+	<submenu></submenu>
+	<unique-id>1754137557025597-1</unique-id>
+	<command>magick %f -quality 60 %f.jpg</command>
+	<description>Smaller image</description>
+	<range>*</range>
+	<patterns>*.jpg;*.bmp;*.png;*.BMP;*.PNG</patterns>
+	<image-files/>
+</action>
+</actions>

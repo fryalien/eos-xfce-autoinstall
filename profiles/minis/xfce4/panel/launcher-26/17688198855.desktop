@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Parabolic
+Comment=Download web video and audio
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/lib/org.nickvision.tubeconverter/org.nickvision.tubeconverter.gnome --file-forwarding org.nickvision.tubeconverter @@u %u @@
+Icon=org.nickvision.tubeconverter
+Terminal=false
+Type=Application
+Categories=AudioVideo;Network;
+Keywords=YouTube;Downloader;ytdlp;Nickvision;Tube;Converter;audio;video;media;download;
+MimeType=x-scheme-handler/parabolic;
+X-GNOME-UsesNotifications=true
+StartupNotify=true
+DBusActivatable=true
+X-Flatpak=org.nickvision.tubeconverter
+X-XFCE-Source=file:///var/lib/flatpak/app/org.nickvision.tubeconverter/x86_64/stable/1b70f3e37ffb0a2b0773ed2263a2399dab837e5377843c0e47dc99be186a8745/export/share/applications/org.nickvision.tubeconverter.desktop
