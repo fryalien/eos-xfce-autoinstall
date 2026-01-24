@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "##### SCRIPT STARTED #####"
+
+date
+
+######################################################################################
+
 echo "##### SET SUDO 3 hrs #####"
 
 ./scripts/set-sudo-timeout.sh
@@ -35,3 +41,9 @@ cp -rfv ./profiles/minis/gtk-3.0 ~/.config/
 echo "##### LOAD minis PANEL CONFIG #####"
 
 xfce4-panel-profiles load ./profiles/minis/minis-xfce-panel.tar.bz2
+
+######################################################################################
+
+echo "##### SCRIPT ENDED #####"
+
+date

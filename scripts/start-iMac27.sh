@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "##### SCRIPT STARTED #####"
+
+date
+
+######################################################################################
+
 echo "##### SET SUDO 3 hrs #####"
 
 ./scripts/set-sudo-timeout.sh
@@ -34,3 +40,9 @@ cp -rfv ./profiles/iMac27/Thunar ~/.config/
 echo "##### LOAD iMac27 PANEL CONFIG #####"
 
 xfce4-panel-profiles load ./profiles/iMac27/imac27-xfce-panel.tar.bz2
+
+######################################################################################
+
+echo "##### SCRIPT ENDED #####"
+
+date
