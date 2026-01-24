@@ -18,6 +18,12 @@ xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s
 
 ######################################################################################
 
+echo "##### STOP PERIODIC PING #####"
+
+./scripts/stop-ping.sh
+
+######################################################################################
+
 echo "##### INSTALL EOS ALL #####"
 
 ./scripts/eos-xfce-install.sh
