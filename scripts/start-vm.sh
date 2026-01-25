@@ -24,15 +24,6 @@ sh ./profiles/vm/flatpak-config.sh
 
 ######################################################################################
 
-echo "##### DISABLE LOCK AND IDLE #####"
-
-xfconf-query -c xfce4-screensaver -p /lock/enabled -s false
-xfconf-query -c xfce4-screensaver -p /saver/mode -s 0
-xfconf-query -c xfce4-screensaver -p /saver/idle-activation/delay -s 0
-xfconf-query -c xfce4-screensaver -p /lock/sleep-activation -s false
-
-######################################################################################
-
 echo "##### COPY XFCE CONFIG #####"
 
 cp -rfv ./profiles/vm/xfce4 ~/.config/
