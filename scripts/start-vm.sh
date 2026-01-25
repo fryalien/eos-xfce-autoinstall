@@ -8,7 +8,7 @@ date
 
 echo "##### INSTALL EOS ALL #####"
 
-./scripts/eos-xfce-install.sh
+./scripts/install-all.sh
 
 ######################################################################################
 

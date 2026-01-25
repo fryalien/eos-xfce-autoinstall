@@ -10,13 +10,9 @@ echo "##### SET SUDO 3 hrs #####"
 
 ######################################################################################
 
-echo "##### SET PRESENTATION MODE ON #####"
+echo "##### NO LOCK, NO BLANK SCREEN #####"
 
-xfconf-query -c xfce4-power-manager \
-  -p /xfce4-power-manager/presentation-mode \
-  -t bool \
-  -s true \
-  --create
+./scripts/xfce-no-lock.sh
 
 ######################################################################################
 
