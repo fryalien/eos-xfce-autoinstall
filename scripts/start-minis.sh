@@ -18,6 +18,10 @@ sh ./profiles/minis/flatpak-apps.sh
 
 flatpak override --user --filesystem=~/BIGDATA
 
+echo "##### COPY FLATPAK CONFIG #####"
+
+sh ./profiles/minis/flatpak-config.sh
+
 ######################################################################################
 
 echo "##### COPY XFCE CONFIG #####"

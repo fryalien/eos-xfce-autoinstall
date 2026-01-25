@@ -18,6 +18,10 @@ sh ./profiles/vm/flatpak-apps.sh
 
 flatpak override --user --filesystem=home
 
+echo "##### COPY FLATPAK CONFIG #####"
+
+sh ./profiles/vm/flatpak-config.sh
+
 ######################################################################################
 
 echo "##### DISABLE LOCK AND IDLE #####"
