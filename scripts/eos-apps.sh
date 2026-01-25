@@ -7,6 +7,7 @@ sudo pacman -Rns --noconfirm firewalld
 sudo pacman -Rns --noconfirm meld
 
 in="sudo pacman -S --noconfirm --needed"
+user="y" #CHANGE TO YOUR USER
 
 # INSTALL PACKAGES
 
@@ -48,6 +49,8 @@ $in tmux
 $in unace
 $in unrar
 $in unzip
-$in wireshark-qt
 $in yt-dlp
 $in zoxide
+
+$in wireshark-qt
+sudo usermod -aG wireshark $user
