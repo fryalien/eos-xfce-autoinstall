@@ -5,12 +5,7 @@
 mkdir -p ~/.var/app
 
 # Copy apps configs.
-
-unzip -v \
-			'./flatpak-var-apps/com.brave.Browser.zip' \
-      './flatpak-var-apps/org.flameshot.Flameshot.zip' \
-      './flatpak-var-apps/org.keepassxc.KeePassXC.zip' \
-      './flatpak-var-apps/org.geany.Geany.zip' \
-      './flatpak-var-apps/org.localsend.localsend_app.zip' \
-      './flatpak-var-apps/org.qbittorrent.qBittorrent.zip' \
-      -d ~/.var/apps/
+unzip -o ./flatpak-var-app/com.brave.Browser.zip -d ~/.var/app
+unzip -o ./flatpak-var-app/org.flameshot.Flameshot.zip -d ~/.var/app
+unzip -o ./flatpak-var-app/org.geany.Geany.zip -d ~/.var/app
+unzip -o ./flatpak-var-app/org.localsend.localsend_app.zip -d ~/.var/app
