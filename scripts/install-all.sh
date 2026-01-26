@@ -30,23 +30,13 @@ sh ./scripts/eos-apps.sh
 
 echo "##### SETUP FISH #####"
 
-mkdir -v ~/.config/fish
-
-curl -L \
-https://raw.githubusercontent.com/fryalien/dotfiles/main/fish/config.fish \
--o ~/.config/fish/config.fish
-
-sudo usermod -s /usr/bin/fish $user
+./scripts/set-fish-config.sh
 
 ######################################################################################
 
 echo "##### SETUP FASTFETCH #####"
 
-mkdir -v ~/.config/fastfetch
-
-curl -L \
-https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/config-simple.jsonc \
--o ~/.config/fastfetch/config.jsonc
+./scripts/set-fastfetch.sh
 
 ######################################################################################
 
@@ -58,10 +48,7 @@ sh ./scripts/set-micro-theme.sh
 
 echo "##### SETUP FIREWALL #####"
 
-sudo ufw disable
-sudo cp -fv ./firewall/user.rules /etc/ufw/
-sudo cp -fv ./firewall/user6.rules /etc/ufw/
-sudo ufw enable
+./scripts/set-firewall.sh
 
 ######################################################################################
 
