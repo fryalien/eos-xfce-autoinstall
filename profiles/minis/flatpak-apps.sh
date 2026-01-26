@@ -42,3 +42,5 @@ $aur freefilesync-bin
 $aur ttf-ms-fonts
 $aur sublime-text-4
 $aur paru
+
+flatpak override --user --filesystem=home

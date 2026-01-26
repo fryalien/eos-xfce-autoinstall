@@ -14,3 +14,5 @@ $fi org.qbittorrent.qBittorrent
 $fi org.videolan.VLC
 
 yay -S --noconfirm --needed freefilesync-bin
+
+flatpak override --user --filesystem=home

@@ -14,3 +14,5 @@ $fi org.flameshot.Flameshot
 $fi com.github.tchx84.Flatseal
 $fi io.github.flattool.Warehouse
 $fi org.dupot.easyflatpak
+
+flatpak override --user --filesystem=home
