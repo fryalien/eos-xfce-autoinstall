@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo "DISABLE UFW"
+echo "Install UFW"
+sudo pacman -S --noconfirm --needed ufw gufw
+
+echo "Disable UFW"
 sudo ufw disable
 
 echo "Copy files from Github"

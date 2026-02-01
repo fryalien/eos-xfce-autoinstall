@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 user="y" #CHANGE THIS IF YOU USE ANOTHER USE
+
+sudo pacman -S --noconfirm --needed fish
 
 echo "Create config dir"
 mkdir -v ~/.config/fish
