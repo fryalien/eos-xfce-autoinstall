@@ -14,7 +14,7 @@ echo "##### NO LOCK, NO BLANK SCREEN #####"
 
 echo "##### STOP PERIODIC PING #####"
 
-./scripts/stop-ping.sh
+./scripts/stop-arch-ping.sh
 
 ######################################################################################
 
