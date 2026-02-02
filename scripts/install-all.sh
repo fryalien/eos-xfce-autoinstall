@@ -50,7 +50,7 @@ echo "##### SETUP FIREWALL #####"
 
 echo "##### SETUP NTP #####"
 
-./scritps/set-new-ntp.sh
+./scripts/set-new-ntp.sh
 
 ######################################################################################
 
