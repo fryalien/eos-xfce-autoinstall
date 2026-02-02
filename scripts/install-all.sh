@@ -20,7 +20,7 @@ echo "##### STOP PERIODIC PING #####"
 
 echo "##### INSTALL DISTRO APPS #####"
 
-sh ./scripts/eos-apps.sh
+./scripts/eos-apps.sh
 
 ######################################################################################
 
@@ -38,7 +38,7 @@ echo "##### SETUP FASTFETCH #####"
 
 echo "##### SETUP MICRO EDITOR #####"
 
-sh ./scripts/set-micro-theme.sh
+./scripts/set-micro-theme.sh
 
 ######################################################################################
 
