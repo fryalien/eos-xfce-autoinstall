@@ -8,4 +8,4 @@ cp -rfv ./profiles/iMac27/gtk-3.0 ~/.config/
 
 echo "##### LOAD iMac27 PANEL CONFIG #####"
 
-xfce4-panel-profiles load ./profiles/iMac27/iMac27-xfce-panel.tar.bz2
+xfce4-panel-profiles load ./profiles/iMac27/imac27-xfce-panel.tar.bz2
