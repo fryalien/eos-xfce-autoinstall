@@ -4,7 +4,7 @@ file="/etc/NetworkManager/conf.d/20-connectivity.conf"
 
 echo "Write into the file"
 
-sudo tee $file > /dev/null <<'EOF'
+sudo tee $file <<'EOF'
 [connectivity]
 enabled=false
 EOF
