@@ -14,17 +14,17 @@ echo "##### INSTALL EOS ALL #####"
 
 echo "##### INSTALL FLATPAK #####"
 
-sh ./profiles/minis/flatpak-apps.sh
+./profiles/minis/flatpak-apps.sh
 
 echo "##### COPY FLATPAK CONFIG #####"
 
-sh ./profiles/minis/flatpak-config.sh
+./profiles/minis/flatpak-config.sh
 
 ######################################################################################
 
 echo "##### COPY XFCE CONFIG #####"
 
-sh ./profiles/minis/xfce-config.sh
+./profiles/minis/xfce-config.sh
 
 ######################################################################################
 

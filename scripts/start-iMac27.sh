@@ -14,17 +14,17 @@ echo "##### INSTALL EOS ALL #####"
 
 echo "##### INSTALL FLATPAK #####"
 
-sh ./profiles/iMac27/flatpak-apps.sh
+./profiles/iMac27/flatpak-apps.sh
 
 echo "##### COPY FLATPAK CONFIG #####"
 
-sh ./profiles/iMac27/flatpak-config.sh
+./profiles/iMac27/flatpak-config.sh
 
 ######################################################################################
 
 echo "##### COPY XFCE CONFIG #####"
 
-sh ./profiles/iMac27/xfce-config.sh
+./profiles/iMac27/xfce-config.sh
 
 ######################################################################################
 
