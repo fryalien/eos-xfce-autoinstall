@@ -24,7 +24,7 @@ echo "##### COPY FLATPAK CONFIG #####"
 
 echo "##### COPY XFCE CONFIG #####"
 
-./profiles/cm/xfce-config.sh
+./profiles/vm/xfce-config.sh
 
 ######################################################################################
 
