@@ -4,6 +4,7 @@
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 fi="flatpak install flathub -y"
+aur="yay -S --noconfirm --needed"
 
 $fi com.brave.Browser
 $fi com.github.johnfactotum.Foliate
@@ -34,13 +35,9 @@ $fi org.tenacityaudio.Tenacity
 $fi org.upscayl.Upscayl
 $fi org.videolan.VLC
 
-# AUR
-aur="yay -S --noconfirm --needed"
+flatpak override --user --filesystem=~/BIGDATA
 
+# AUR
 $aur megasync-bin
 $aur freefilesync-bin
-$aur ttf-ms-fonts
-$aur sublime-text-4
 $aur paru
-
-flatpak override --user --filesystem=home

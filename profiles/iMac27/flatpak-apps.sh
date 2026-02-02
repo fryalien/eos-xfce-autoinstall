@@ -4,6 +4,7 @@
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 fi="flatpak install flathub -y"
+aur="yay -S --noconfirm --needed"
 
 #$fi com.calibre_ebook.calibre
 #$fi com.discordapp.Discord
@@ -55,13 +56,9 @@ $fi org.videolan.VLC
 #$fi org.kde.kwrite
 #$fi org.kde.KStyle.Kvantum
 
-# AUR
-aur="yay -S --noconfirm --needed"
+flatpak override --user --filesystem=home
 
+# AUR
 $aur megasync-bin
 $aur freefilesync-bin
-$aur ttf-ms-fonts
-$aur sublime-text-4
 $aur paru
-
-flatpak override --user --filesystem=home
