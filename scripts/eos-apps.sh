@@ -1,21 +1,21 @@
 #!/bin/bash
 
-# REMOVE FROM EOS
-
-sudo pacman -Rns --noconfirm firefox
-sudo pacman -Rns --noconfirm firewalld
-sudo pacman -Rns --noconfirm meld
-
 in="sudo pacman -S --noconfirm --needed"
 aur="yay -S --noconfirm --needed"
+rmp="sudo pacman -Rns --noconfirm"
 
-# INSTALL PACKAGES
+echo "REMOVE FROM EOS"
+
+$rmp firefox
+$rmp firewalld
+$rmp meld
+
+echo "INSTALL PACKAGES"
 
 $in fish
 $in flatpak
 $in ufw gufw
 
-$in jq
 $in xfce4-panel-profiles
 $in xfce4-xkb-plugin
 $in xfce4-sensors-plugin
@@ -56,6 +56,6 @@ $in zoxide
 $in wireshark-qt
 sudo usermod -aG wireshark $USER
 
-# AUR
+echo "AUR"
 $aur ttf-ms-fonts
 $aur sublime-text-4

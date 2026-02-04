@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 echo "Install fish"
 sudo pacman -S --noconfirm --needed fish
@@ -9,10 +9,7 @@ mkdir -v ~/.config/fish
 echo "Download config file"
 curl -L \
 https://raw.githubusercontent.com/fryalien/dotfiles/main/fish/config.fish \
--o ./config/fish/config.fish
-
-echo "Copy config file to default dir"
-cp -v ./config/fish/config.fish ~/.config/fish/
+-o ~/.config/fish/config.fish
 
 echo "Set fish shell default for my user"
 sudo usermod -s /usr/bin/fish $USER

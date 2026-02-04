@@ -34,4 +34,3 @@ sudo systemctl enable ufw
 
 echo "Check UFW service status"
 systemctl is-enabled ufw
-
