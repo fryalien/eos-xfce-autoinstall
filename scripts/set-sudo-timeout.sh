@@ -1,13 +1,13 @@
 #!/bin/bash
 
-FILE=/etc/sudoers.d/timeout
+file=/etc/sudoers.d/timeout
 
-sudo tee "$FILE" >/dev/null <<'EOF'
+sudo tee "$file" >/dev/null <<'EOF'
 Defaults timestamp_type=tty
 Defaults timestamp_timeout=180
 EOF
 
-sudo chmod 440 "$FILE"
+sudo chmod 440 "$file"
 
 sudo -k
 

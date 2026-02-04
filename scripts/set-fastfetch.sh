@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Install FF"
+echo "Install"
 sudo pacman -S --noconfirm --needed fastfetch
 
 echo "Make config dir"

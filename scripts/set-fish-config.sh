@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Install fish"
+echo "Install"
 sudo pacman -S --noconfirm --needed fish
 
 echo "Create config dir"

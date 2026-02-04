@@ -4,13 +4,12 @@ in="sudo pacman -S --noconfirm --needed"
 aur="yay -S --noconfirm --needed"
 rmp="sudo pacman -Rns --noconfirm"
 
-echo "REMOVE FROM EOS"
-
+echo "Remove apps"
 $rmp firefox
 $rmp firewalld
 $rmp meld
 
-echo "INSTALL PACKAGES"
+echo "Install apps"
 
 $in fish
 $in flatpak
