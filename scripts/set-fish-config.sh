@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-user="y" #CHANGE THIS IF YOU USE ANOTHER USE
-
 echo "Install fish"
 sudo pacman -S --noconfirm --needed fish
 
@@ -17,4 +15,4 @@ echo "Copy config file to default dir"
 cp -v ./config/fish/config.fish ~/.config/fish/
 
 echo "Set fish shell default for my user"
-sudo usermod -s /usr/bin/fish $user
+sudo usermod -s /usr/bin/fish $USER
