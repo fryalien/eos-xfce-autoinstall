@@ -61,3 +61,7 @@ sudo usermod -aG wireshark $USER
 echo "AUR"
 $aur ttf-ms-fonts
 $aur sublime-text-4
+$aur catppuccin-cursors-latte
+$aur catppuccin-cursors-frappe
+$aur catppuccin-cursors-macchiato
+$aur catppuccin-cursors-mocha
