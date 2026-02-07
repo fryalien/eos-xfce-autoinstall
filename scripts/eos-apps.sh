@@ -53,7 +53,7 @@ $in unace
 $in unrar
 $in unzip
 $in yt-dlp
-$in ghosty
+$in ghostty
 $in zoxide
 
 $in wireshark-qt
