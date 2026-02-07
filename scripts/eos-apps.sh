@@ -53,12 +53,14 @@ $in unace
 $in unrar
 $in unzip
 $in yt-dlp
+$in ghosty
 $in zoxide
 
 $in wireshark-qt
 sudo usermod -aG wireshark $USER
 
 echo "AUR"
+$aur ttf-hack-nerd
 $aur ttf-ms-fonts
 $aur sublime-text-4
 $aur catppuccin-cursors-latte
