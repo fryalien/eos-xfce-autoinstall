@@ -39,7 +39,7 @@ $in imagemagick
 $in kbackup
 $in kcalc
 $in micro
-$in ncdu
+$in ncdu gdu
 $in neovim
 $in p7zip
 $in partitionmanager
