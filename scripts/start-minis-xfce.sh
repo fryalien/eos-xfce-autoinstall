@@ -10,6 +10,8 @@ echo "##### INSTALL EOS ALL #####"
 
 ./scripts/install-all.sh
 
+./scripts/eos-xfce-apps.sh
+
 ######################################################################################
 
 echo "##### INSTALL FLATPAK #####"
