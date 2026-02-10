@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Add flathub repo.
+echo "Add flathub repo"
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 fi="flatpak install flathub -y"

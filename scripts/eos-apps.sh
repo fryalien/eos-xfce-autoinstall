@@ -1,25 +1,22 @@
 #!/bin/bash
 
-# REMOVE FROM EOS
-
-sudo pacman -Rns --noconfirm firefox
-sudo pacman -Rns --noconfirm firewalld
-sudo pacman -Rns --noconfirm meld
-
 in="sudo pacman -S --noconfirm --needed"
 aur="yay -S --noconfirm --needed"
-user="y" #CHANGE TO YOUR USER
+rmp="sudo pacman -Rns --noconfirm"
 
-# INSTALL PACKAGES
+# yay not asking anoying questions
+yay --save --answerdiff None --answerclean None --removemake   
+
+echo "Remove apps"
+$rmp firefox
+$rmp firewalld
+$rmp meld
+
+echo "Install apps"
 
 $in fish
 $in flatpak
 $in ufw gufw
-
-$in xfce4-panel-profiles
-$in xfce4-xkb-plugin
-$in xfce4-sensors-plugin
-$in xfce4-eyes-plugin
 
 $in bat
 $in btop
@@ -37,7 +34,7 @@ $in imagemagick
 $in kbackup
 $in kcalc
 $in micro
-$in ncdu
+$in ncdu gdu
 $in neovim
 $in p7zip
 $in partitionmanager
@@ -51,11 +48,18 @@ $in unace
 $in unrar
 $in unzip
 $in yt-dlp
+$in ghostty
 $in zoxide
 
 $in wireshark-qt
-sudo usermod -aG wireshark $user
+sudo usermod -aG wireshark $USER
 
-# AUR
+echo "AUR"
+$aur ttf-jetbrains-mono-nerd
+$aur ttf-hack-nerd
 $aur ttf-ms-fonts
 $aur sublime-text-4
+$aur catppuccin-cursors-latte
+$aur catppuccin-cursors-frappe
+$aur catppuccin-cursors-macchiato
+$aur catppuccin-cursors-mocha
