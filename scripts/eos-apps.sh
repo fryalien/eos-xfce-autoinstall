@@ -16,7 +16,6 @@ $in fish
 $in flatpak
 $in ufw gufw
 
-$in jq
 $in xfce4-panel-profiles
 $in xfce4-xkb-plugin
 $in xfce4-sensors-plugin
