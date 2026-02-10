@@ -6,7 +6,7 @@ log="./install-$(date +%Y-%m-%d_%H:%M).log"
 errorlog="./error-$(date +%Y-%m-%d_%H:%M).log"
 
 # Redirect stdout and stderr to tee (both screen and file)
-exec > >(tee -a "$log") > $log 2> $errorlog
+exec > >(tee -a "$log") 2> "$errorlog"
 
 echo "Which script do you want to run?"
 echo "1) iMac27"
