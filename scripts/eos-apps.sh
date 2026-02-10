@@ -59,7 +59,7 @@ $aur ttf-jetbrains-mono-nerd
 $aur ttf-hack-nerd
 $aur ttf-ms-fonts
 $aur sublime-text-4
-$aur catppuccin-cursors-latte
-$aur catppuccin-cursors-frappe
-$aur catppuccin-cursors-macchiato
+#$aur catppuccin-cursors-latte
+#$aur catppuccin-cursors-frappe
+#$aur catppuccin-cursors-macchiato
 $aur catppuccin-cursors-mocha
