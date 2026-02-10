@@ -5,7 +5,7 @@ aur="yay -S --noconfirm --needed"
 rmp="sudo pacman -Rns --noconfirm"
 
 # yay not asking anoying questions
-yay --save --answerdiff None --answerclean None --removemake   
+echo "" | yay --save --answerdiff None --answerclean None --removemake None   
 
 echo "Remove apps"
 $rmp firefox

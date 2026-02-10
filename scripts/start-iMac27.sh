@@ -12,14 +12,6 @@ echo "##### INSTALL EOS ALL #####"
 
 ######################################################################################
 
-echo "##### XFCE STUFF #####"
-
-./scripts/xfce-no-lock.sh
-
-./scripts/eos-xfce-apps.sh
-
-######################################################################################
-
 echo "##### INSTALL FLATPAK #####"
 
 ./profiles/iMac27/flatpak-apps.sh
@@ -30,7 +22,11 @@ echo "##### COPY FLATPAK CONFIG #####"
 
 ######################################################################################
 
-echo "##### COPY XFCE CONFIG #####"
+echo "##### XFCE STUFF #####"
+
+./scripts/xfce-no-lock.sh
+
+./scripts/eos-xfce-apps.sh
 
 ./profiles/iMac27/xfce-config.sh
 
