@@ -9,6 +9,6 @@ EOF
 
 sudo chmod 440 "$file"
 
-sudo -k
+#sudo -k
 
 echo "Sudo password timeout set to 180 minutes (3 hours)."
