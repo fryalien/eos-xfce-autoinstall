@@ -38,6 +38,6 @@ $fi org.videolan.VLC
 flatpak override --user --filesystem=~/BIGDATA
 
 echo "AUR"
-$aur megasync-bin
-$aur freefilesync-bin
+#$aur megasync-bin
+#$aur freefilesync-bin
 $aur paru

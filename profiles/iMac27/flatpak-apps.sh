@@ -59,6 +59,6 @@ $fi org.videolan.VLC
 flatpak override --user --filesystem=home
 
 echo "AUR"
-$aur megasync-bin
-$aur freefilesync-bin
+#$aur megasync-bin
+#$aur freefilesync-bin
 $aur paru
