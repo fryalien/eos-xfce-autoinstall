@@ -11,6 +11,7 @@ echo "Remove apps"
 $rmp firefox
 $rmp firewalld
 $rmp meld
+$rmp ex-vi-compat
 
 echo "Install apps"
 
